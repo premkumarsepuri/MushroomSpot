@@ -1,0 +1,714 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B3F66852DB3C285004EDB42 /* MushroomSpotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3F66842DB3C285004EDB42 /* MushroomSpotApp.swift */; };
+		3B3F66872DB3C285004EDB42 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3F66862DB3C285004EDB42 /* LoginView.swift */; };
+		3B3F66892DB3C287004EDB42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B3F66882DB3C287004EDB42 /* Assets.xcassets */; };
+		3B3F668C2DB3C287004EDB42 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B3F668B2DB3C287004EDB42 /* Preview Assets.xcassets */; };
+		3B3F66962DB3C287004EDB42 /* MushroomSpotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3F66952DB3C287004EDB42 /* MushroomSpotTests.swift */; };
+		3B3F66A02DB3C287004EDB42 /* MushroomSpotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3F669F2DB3C287004EDB42 /* MushroomSpotUITests.swift */; };
+		3B3F66A22DB3C287004EDB42 /* MushroomSpotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3F66A12DB3C287004EDB42 /* MushroomSpotUITestsLaunchTests.swift */; };
+		3B3F66AF2DB3C305004EDB42 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3F66AE2DB3C305004EDB42 /* LoginViewModel.swift */; };
+		3B3F66B12DB3C382004EDB42 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3F66B02DB3C382004EDB42 /* HomeView.swift */; };
+		3B3F66B42DB3C3D6004EDB42 /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3F66B32DB3C3D6004EDB42 /* Validators.swift */; };
+		3B3F66B52DB3C3D6004EDB42 /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3F66B32DB3C3D6004EDB42 /* Validators.swift */; };
+		3B3F66B72DB3C400004EDB42 /* service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3F66B62DB3C400004EDB42 /* service.swift */; };
+		3B3F66B82DB3C400004EDB42 /* service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3F66B62DB3C400004EDB42 /* service.swift */; };
+		3B3F66BA2DB3C42E004EDB42 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3F66B92DB3C42E004EDB42 /* LoginModel.swift */; };
+		3B3F66BB2DB3C42E004EDB42 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3F66B92DB3C42E004EDB42 /* LoginModel.swift */; };
+		3B3F66BE2DB3CD33004EDB42 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3F66BD2DB3CD33004EDB42 /* KeychainHelper.swift */; };
+		3B3F66BF2DB3CD33004EDB42 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3F66BD2DB3CD33004EDB42 /* KeychainHelper.swift */; };
+		3B3F66C12DB4A110004EDB42 /* MushroomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3F66C02DB4A110004EDB42 /* MushroomModel.swift */; };
+		3B3F66C22DB4A110004EDB42 /* MushroomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3F66C02DB4A110004EDB42 /* MushroomModel.swift */; };
+		3B3F66C42DB4A3AB004EDB42 /* MushroomListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3F66C32DB4A3AB004EDB42 /* MushroomListViewModel.swift */; };
+		3B3F66C72DB4A46D004EDB42 /* MushroomDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3F66C62DB4A46D004EDB42 /* MushroomDetailView.swift */; };
+		3BF0961E2DB4B90800D4D17B /* UserProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF0961D2DB4B90800D4D17B /* UserProfileModel.swift */; };
+		3BF096202DB4B95400D4D17B /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF0961F2DB4B95400D4D17B /* UserProfileViewModel.swift */; };
+		3BF096232DB4C6BC00D4D17B /* UserProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF0961D2DB4B90800D4D17B /* UserProfileModel.swift */; };
+		3BF096272DB4CF0300D4D17B /* MockAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF096262DB4CF0300D4D17B /* MockAPIService.swift */; };
+		3BF096292DB4CF5500D4D17B /* MushroomListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF096282DB4CF5500D4D17B /* MushroomListViewModelTests.swift */; };
+		3BF0962A2DB4D09400D4D17B /* MushroomListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3F66C32DB4A3AB004EDB42 /* MushroomListViewModel.swift */; };
+		3BF0962B2DB4D37300D4D17B /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF0961F2DB4B95400D4D17B /* UserProfileViewModel.swift */; };
+		3BF0962C2DB4D37800D4D17B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3F66AE2DB3C305004EDB42 /* LoginViewModel.swift */; };
+		3BF0962D2DB4D38000D4D17B /* MushroomDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3F66C62DB4A46D004EDB42 /* MushroomDetailView.swift */; };
+		3BF0962E2DB4D38300D4D17B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3F66B02DB3C382004EDB42 /* HomeView.swift */; };
+		3BF0962F2DB4D38500D4D17B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3F66862DB3C285004EDB42 /* LoginView.swift */; };
+		3BF096312DB4EA2F00D4D17B /* UserProfileViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF096302DB4EA2F00D4D17B /* UserProfileViewModelTests.swift */; };
+		3BF096332DB4F0F800D4D17B /* SessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF096322DB4F0F800D4D17B /* SessionViewModel.swift */; };
+		3BF096352DB4F57200D4D17B /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF096342DB4F57200D4D17B /* RootView.swift */; };
+		3BF096362DB4F83200D4D17B /* SessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF096322DB4F0F800D4D17B /* SessionViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B3F66922DB3C287004EDB42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B3F66792DB3C285004EDB42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B3F66802DB3C285004EDB42;
+			remoteInfo = MushroomSpot;
+		};
+		3B3F669C2DB3C287004EDB42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B3F66792DB3C285004EDB42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B3F66802DB3C285004EDB42;
+			remoteInfo = MushroomSpot;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B3F66812DB3C285004EDB42 /* MushroomSpot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MushroomSpot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B3F66842DB3C285004EDB42 /* MushroomSpotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MushroomSpotApp.swift; sourceTree = "<group>"; };
+		3B3F66862DB3C285004EDB42 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		3B3F66882DB3C287004EDB42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B3F668B2DB3C287004EDB42 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3B3F66912DB3C287004EDB42 /* MushroomSpotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MushroomSpotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B3F66952DB3C287004EDB42 /* MushroomSpotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MushroomSpotTests.swift; sourceTree = "<group>"; };
+		3B3F669B2DB3C287004EDB42 /* MushroomSpotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MushroomSpotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B3F669F2DB3C287004EDB42 /* MushroomSpotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MushroomSpotUITests.swift; sourceTree = "<group>"; };
+		3B3F66A12DB3C287004EDB42 /* MushroomSpotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MushroomSpotUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3B3F66AE2DB3C305004EDB42 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		3B3F66B02DB3C382004EDB42 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3B3F66B32DB3C3D6004EDB42 /* Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
+		3B3F66B62DB3C400004EDB42 /* service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = service.swift; sourceTree = "<group>"; };
+		3B3F66B92DB3C42E004EDB42 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		3B3F66BC2DB3C82C004EDB42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3B3F66BD2DB3CD33004EDB42 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		3B3F66C02DB4A110004EDB42 /* MushroomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MushroomModel.swift; sourceTree = "<group>"; };
+		3B3F66C32DB4A3AB004EDB42 /* MushroomListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MushroomListViewModel.swift; sourceTree = "<group>"; };
+		3B3F66C62DB4A46D004EDB42 /* MushroomDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MushroomDetailView.swift; sourceTree = "<group>"; };
+		3BF0961D2DB4B90800D4D17B /* UserProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileModel.swift; sourceTree = "<group>"; };
+		3BF0961F2DB4B95400D4D17B /* UserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewModel.swift; sourceTree = "<group>"; };
+		3BF096262DB4CF0300D4D17B /* MockAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIService.swift; sourceTree = "<group>"; };
+		3BF096282DB4CF5500D4D17B /* MushroomListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MushroomListViewModelTests.swift; sourceTree = "<group>"; };
+		3BF096302DB4EA2F00D4D17B /* UserProfileViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewModelTests.swift; sourceTree = "<group>"; };
+		3BF096322DB4F0F800D4D17B /* SessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewModel.swift; sourceTree = "<group>"; };
+		3BF096342DB4F57200D4D17B /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B3F667E2DB3C285004EDB42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B3F668E2DB3C287004EDB42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B3F66982DB3C287004EDB42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B3F66782DB3C285004EDB42 = {
+			isa = PBXGroup;
+			children = (
+				3B3F66832DB3C285004EDB42 /* MushroomSpot */,
+				3B3F66942DB3C287004EDB42 /* MushroomSpotTests */,
+				3B3F669E2DB3C287004EDB42 /* MushroomSpotUITests */,
+				3B3F66822DB3C285004EDB42 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3B3F66822DB3C285004EDB42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B3F66812DB3C285004EDB42 /* MushroomSpot.app */,
+				3B3F66912DB3C287004EDB42 /* MushroomSpotTests.xctest */,
+				3B3F669B2DB3C287004EDB42 /* MushroomSpotUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B3F66832DB3C285004EDB42 /* MushroomSpot */ = {
+			isa = PBXGroup;
+			children = (
+				3BF096252DB4C70000D4D17B /* helpers */,
+				3BF096242DB4C6D300D4D17B /* ViewModel */,
+				3BF096222DB4C6A400D4D17B /* Model */,
+				3BF096212DB4C68200D4D17B /* view */,
+				3B3F66BC2DB3C82C004EDB42 /* Info.plist */,
+				3B3F66842DB3C285004EDB42 /* MushroomSpotApp.swift */,
+				3BF096342DB4F57200D4D17B /* RootView.swift */,
+				3B3F66882DB3C287004EDB42 /* Assets.xcassets */,
+				3B3F668A2DB3C287004EDB42 /* Preview Content */,
+			);
+			path = MushroomSpot;
+			sourceTree = "<group>";
+		};
+		3B3F668A2DB3C287004EDB42 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3B3F668B2DB3C287004EDB42 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3B3F66942DB3C287004EDB42 /* MushroomSpotTests */ = {
+			isa = PBXGroup;
+			children = (
+				3B3F66952DB3C287004EDB42 /* MushroomSpotTests.swift */,
+				3BF096262DB4CF0300D4D17B /* MockAPIService.swift */,
+				3BF096282DB4CF5500D4D17B /* MushroomListViewModelTests.swift */,
+				3BF096302DB4EA2F00D4D17B /* UserProfileViewModelTests.swift */,
+			);
+			path = MushroomSpotTests;
+			sourceTree = "<group>";
+		};
+		3B3F669E2DB3C287004EDB42 /* MushroomSpotUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3B3F669F2DB3C287004EDB42 /* MushroomSpotUITests.swift */,
+				3B3F66A12DB3C287004EDB42 /* MushroomSpotUITestsLaunchTests.swift */,
+			);
+			path = MushroomSpotUITests;
+			sourceTree = "<group>";
+		};
+		3BF096212DB4C68200D4D17B /* view */ = {
+			isa = PBXGroup;
+			children = (
+				3B3F66C62DB4A46D004EDB42 /* MushroomDetailView.swift */,
+				3B3F66B02DB3C382004EDB42 /* HomeView.swift */,
+				3B3F66862DB3C285004EDB42 /* LoginView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		3BF096222DB4C6A400D4D17B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3BF0961D2DB4B90800D4D17B /* UserProfileModel.swift */,
+				3B3F66C02DB4A110004EDB42 /* MushroomModel.swift */,
+				3B3F66B92DB3C42E004EDB42 /* LoginModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3BF096242DB4C6D300D4D17B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3BF0961F2DB4B95400D4D17B /* UserProfileViewModel.swift */,
+				3B3F66C32DB4A3AB004EDB42 /* MushroomListViewModel.swift */,
+				3B3F66AE2DB3C305004EDB42 /* LoginViewModel.swift */,
+				3BF096322DB4F0F800D4D17B /* SessionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3BF096252DB4C70000D4D17B /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3B3F66BD2DB3CD33004EDB42 /* KeychainHelper.swift */,
+				3B3F66B62DB3C400004EDB42 /* service.swift */,
+				3B3F66B32DB3C3D6004EDB42 /* Validators.swift */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B3F66802DB3C285004EDB42 /* MushroomSpot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B3F66A52DB3C287004EDB42 /* Build configuration list for PBXNativeTarget "MushroomSpot" */;
+			buildPhases = (
+				3B3F667D2DB3C285004EDB42 /* Sources */,
+				3B3F667E2DB3C285004EDB42 /* Frameworks */,
+				3B3F667F2DB3C285004EDB42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MushroomSpot;
+			productName = MushroomSpot;
+			productReference = 3B3F66812DB3C285004EDB42 /* MushroomSpot.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3B3F66902DB3C287004EDB42 /* MushroomSpotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B3F66A82DB3C287004EDB42 /* Build configuration list for PBXNativeTarget "MushroomSpotTests" */;
+			buildPhases = (
+				3B3F668D2DB3C287004EDB42 /* Sources */,
+				3B3F668E2DB3C287004EDB42 /* Frameworks */,
+				3B3F668F2DB3C287004EDB42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B3F66932DB3C287004EDB42 /* PBXTargetDependency */,
+			);
+			name = MushroomSpotTests;
+			productName = MushroomSpotTests;
+			productReference = 3B3F66912DB3C287004EDB42 /* MushroomSpotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3B3F669A2DB3C287004EDB42 /* MushroomSpotUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B3F66AB2DB3C287004EDB42 /* Build configuration list for PBXNativeTarget "MushroomSpotUITests" */;
+			buildPhases = (
+				3B3F66972DB3C287004EDB42 /* Sources */,
+				3B3F66982DB3C287004EDB42 /* Frameworks */,
+				3B3F66992DB3C287004EDB42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B3F669D2DB3C287004EDB42 /* PBXTargetDependency */,
+			);
+			name = MushroomSpotUITests;
+			productName = MushroomSpotUITests;
+			productReference = 3B3F669B2DB3C287004EDB42 /* MushroomSpotUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B3F66792DB3C285004EDB42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					3B3F66802DB3C285004EDB42 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					3B3F66902DB3C287004EDB42 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 3B3F66802DB3C285004EDB42;
+					};
+					3B3F669A2DB3C287004EDB42 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 3B3F66802DB3C285004EDB42;
+					};
+				};
+			};
+			buildConfigurationList = 3B3F667C2DB3C285004EDB42 /* Build configuration list for PBXProject "MushroomSpot" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B3F66782DB3C285004EDB42;
+			productRefGroup = 3B3F66822DB3C285004EDB42 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B3F66802DB3C285004EDB42 /* MushroomSpot */,
+				3B3F66902DB3C287004EDB42 /* MushroomSpotTests */,
+				3B3F669A2DB3C287004EDB42 /* MushroomSpotUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B3F667F2DB3C285004EDB42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B3F668C2DB3C287004EDB42 /* Preview Assets.xcassets in Resources */,
+				3B3F66892DB3C287004EDB42 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B3F668F2DB3C287004EDB42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B3F66992DB3C287004EDB42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B3F667D2DB3C285004EDB42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B3F66BA2DB3C42E004EDB42 /* LoginModel.swift in Sources */,
+				3B3F66872DB3C285004EDB42 /* LoginView.swift in Sources */,
+				3B3F66C72DB4A46D004EDB42 /* MushroomDetailView.swift in Sources */,
+				3B3F66C12DB4A110004EDB42 /* MushroomModel.swift in Sources */,
+				3B3F66B72DB3C400004EDB42 /* service.swift in Sources */,
+				3B3F66BE2DB3CD33004EDB42 /* KeychainHelper.swift in Sources */,
+				3BF096202DB4B95400D4D17B /* UserProfileViewModel.swift in Sources */,
+				3B3F66B12DB3C382004EDB42 /* HomeView.swift in Sources */,
+				3B3F66852DB3C285004EDB42 /* MushroomSpotApp.swift in Sources */,
+				3B3F66B42DB3C3D6004EDB42 /* Validators.swift in Sources */,
+				3B3F66C42DB4A3AB004EDB42 /* MushroomListViewModel.swift in Sources */,
+				3BF096332DB4F0F800D4D17B /* SessionViewModel.swift in Sources */,
+				3BF0961E2DB4B90800D4D17B /* UserProfileModel.swift in Sources */,
+				3B3F66AF2DB3C305004EDB42 /* LoginViewModel.swift in Sources */,
+				3BF096352DB4F57200D4D17B /* RootView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B3F668D2DB3C287004EDB42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B3F66BB2DB3C42E004EDB42 /* LoginModel.swift in Sources */,
+				3BF0962E2DB4D38300D4D17B /* HomeView.swift in Sources */,
+				3BF096232DB4C6BC00D4D17B /* UserProfileModel.swift in Sources */,
+				3BF0962F2DB4D38500D4D17B /* LoginView.swift in Sources */,
+				3B3F66C22DB4A110004EDB42 /* MushroomModel.swift in Sources */,
+				3B3F66BF2DB3CD33004EDB42 /* KeychainHelper.swift in Sources */,
+				3BF096272DB4CF0300D4D17B /* MockAPIService.swift in Sources */,
+				3BF0962B2DB4D37300D4D17B /* UserProfileViewModel.swift in Sources */,
+				3BF096362DB4F83200D4D17B /* SessionViewModel.swift in Sources */,
+				3BF096292DB4CF5500D4D17B /* MushroomListViewModelTests.swift in Sources */,
+				3BF096312DB4EA2F00D4D17B /* UserProfileViewModelTests.swift in Sources */,
+				3BF0962D2DB4D38000D4D17B /* MushroomDetailView.swift in Sources */,
+				3B3F66962DB3C287004EDB42 /* MushroomSpotTests.swift in Sources */,
+				3BF0962C2DB4D37800D4D17B /* LoginViewModel.swift in Sources */,
+				3B3F66B82DB3C400004EDB42 /* service.swift in Sources */,
+				3BF0962A2DB4D09400D4D17B /* MushroomListViewModel.swift in Sources */,
+				3B3F66B52DB3C3D6004EDB42 /* Validators.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B3F66972DB3C287004EDB42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B3F66A22DB3C287004EDB42 /* MushroomSpotUITestsLaunchTests.swift in Sources */,
+				3B3F66A02DB3C287004EDB42 /* MushroomSpotUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B3F66932DB3C287004EDB42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B3F66802DB3C285004EDB42 /* MushroomSpot */;
+			targetProxy = 3B3F66922DB3C287004EDB42 /* PBXContainerItemProxy */;
+		};
+		3B3F669D2DB3C287004EDB42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B3F66802DB3C285004EDB42 /* MushroomSpot */;
+			targetProxy = 3B3F669C2DB3C287004EDB42 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3B3F66A32DB3C287004EDB42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3B3F66A42DB3C287004EDB42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B3F66A62DB3C287004EDB42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MushroomSpot/Preview Content\"";
+				DEVELOPMENT_TEAM = QJP7Y6C4XR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MushroomSpot/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prem.MushroomSpot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B3F66A72DB3C287004EDB42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MushroomSpot/Preview Content\"";
+				DEVELOPMENT_TEAM = QJP7Y6C4XR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MushroomSpot/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prem.MushroomSpot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3B3F66A92DB3C287004EDB42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QJP7Y6C4XR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prem.MushroomSpotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MushroomSpot.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MushroomSpot";
+			};
+			name = Debug;
+		};
+		3B3F66AA2DB3C287004EDB42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QJP7Y6C4XR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prem.MushroomSpotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MushroomSpot.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MushroomSpot";
+			};
+			name = Release;
+		};
+		3B3F66AC2DB3C287004EDB42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QJP7Y6C4XR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prem.MushroomSpotUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MushroomSpot;
+			};
+			name = Debug;
+		};
+		3B3F66AD2DB3C287004EDB42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QJP7Y6C4XR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prem.MushroomSpotUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MushroomSpot;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B3F667C2DB3C285004EDB42 /* Build configuration list for PBXProject "MushroomSpot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B3F66A32DB3C287004EDB42 /* Debug */,
+				3B3F66A42DB3C287004EDB42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B3F66A52DB3C287004EDB42 /* Build configuration list for PBXNativeTarget "MushroomSpot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B3F66A62DB3C287004EDB42 /* Debug */,
+				3B3F66A72DB3C287004EDB42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B3F66A82DB3C287004EDB42 /* Build configuration list for PBXNativeTarget "MushroomSpotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B3F66A92DB3C287004EDB42 /* Debug */,
+				3B3F66AA2DB3C287004EDB42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B3F66AB2DB3C287004EDB42 /* Build configuration list for PBXNativeTarget "MushroomSpotUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B3F66AC2DB3C287004EDB42 /* Debug */,
+				3B3F66AD2DB3C287004EDB42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B3F66792DB3C285004EDB42 /* Project object */;
+}
